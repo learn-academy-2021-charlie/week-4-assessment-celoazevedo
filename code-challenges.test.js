@@ -23,21 +23,24 @@
 // var colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
 // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
 
-fdescribe("removeFirstAndShuffle", () => {
+describe("removeFirstAndShuffle", () => {
     let colors1 = ["purple", "blue", "green", "yellow", "pink"]
     let colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
     let colors1Length = colors1.length
-    // okay... when I declered colors1Length inside the test it was not giving me the origin length of the colors1 array. If I declare outside the test method, it will give me the correct length of the original array.
+    let colors2Length = colors2.length
+    // okay... when I declered colors1Length inside the test it was not giving me the origin length of the colors1 array. If I declare outside the test method, it will give me the correct length of the original array. Now we can work with the length of the original array and compare with the length of the new array - 1. it should be equal!
     test("returns an array without the first element and shuffled", () => {
-      let resultArrLength = removeFirstAndShuffle(colors1).length
-      console.log(resultArrLength)
-      console.log(colors1Length)
-      let colors2Length = colors2.length
-    //   console.log(removeFirstAndShuffle(colors1).length)
+      let resultColors1Length = removeFirstAndShuffle(colors1).length
+      let resultColors2Length = removeFirstAndShuffle(colors2).length
+    //   console.log(resultColors1Length)
+    //   console.log(resultColors2Length)
+    //   console.log(colors1Length)
+    //   console.log(colors2Length)
       expect(removeFirstAndShuffle(colors1)).not.toEqual(["blue", "green", "yellow", "pink"]) // comparing the result with the original array without the first element, and not shuffled. --> passed because the arrays should not be the same -- the result is shuffled --> used the .not.toEaqual
       expect(removeFirstAndShuffle(colors2)).not.toEqual(["indigo", "periwinkle", "ochre", "aquamarine", "saffron"])
       //here i am trying to check for the length of the new array. if the length is equals to the length of the previous array - 1. There will be nothing else that needs to be checked.
-      expect(resultArrLength).toEqual(colors1Length - 1)
+      expect(resultColors1Length).toEqual(colors1Length - 1)
+      expect(resultColors2Length).toEqual(colors2Length - 1)
     })
   })
 
