@@ -23,15 +23,21 @@
 // var colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
 // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
 
-describe("removeFirstAndShuffle", () => {
+fdescribe("removeFirstAndShuffle", () => {
     let colors1 = ["purple", "blue", "green", "yellow", "pink"]
     let colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+    let colors1Length = colors1.length
+    // okay... when I declered colors1Length inside the test it was not giving me the origin length of the colors1 array. If I declare outside the test method, it will give me the correct length of the original array.
     test("returns an array without the first element and shuffled", () => {
+      let resultArrLength = removeFirstAndShuffle(colors1).length
+      console.log(resultArrLength)
+      console.log(colors1Length)
+      let colors2Length = colors2.length
     //   console.log(removeFirstAndShuffle(colors1).length)
       expect(removeFirstAndShuffle(colors1)).not.toEqual(["blue", "green", "yellow", "pink"]) // comparing the result with the original array without the first element, and not shuffled. --> passed because the arrays should not be the same -- the result is shuffled --> used the .not.toEaqual
       expect(removeFirstAndShuffle(colors2)).not.toEqual(["indigo", "periwinkle", "ochre", "aquamarine", "saffron"])
       //here i am trying to check for the length of the new array. if the length is equals to the length of the previous array - 1. There will be nothing else that needs to be checked.
-    //   expect(removeFirstAndShuffle(colors1).length).toEqual(colors1.length - 1)
+      expect(resultArrLength).toEqual(colors1Length - 1)
     })
   })
 
