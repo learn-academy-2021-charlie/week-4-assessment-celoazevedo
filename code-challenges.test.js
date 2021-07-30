@@ -87,7 +87,7 @@ const minAndMax = (arr) => {
 
 // a) Create a test with an expect statement using the variables provided.
 // fdescribe() --> very cool so that we can just focused in the last test. Skiped the first two!
-fdescribe("concatArraysNoDups", () => {
+describe("concatArraysNoDups", () => {
     let testArray1 = [3, 7, 10, 5, 4, 3, 3]
     let testArray2 = [7, 8, 2, 3, 1, 5, 4]
     test("takes in two arrays as arguments and returns one array with no duplicate values", () => {
