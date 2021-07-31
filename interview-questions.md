@@ -7,9 +7,9 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What is an instance variable in Ruby? How is it different from other variables?
 
-  Your answer:
+  Your answer:  the instance variable (declared with @) in ruby is declared when you create a class. That will allow every object that is an instance of that class to have access to that variable. It becomes part of the objects.
 
-  Researched answer:
+  Researched answer: to add to my answer, the objects will have access to the intance variable declared in the class but each object (instance of the class) can have different values for theis instance variables.
 
 
 
