@@ -15,9 +15,9 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 2. What is a block in Ruby?
 
-  Your answer:
+  Your answer: a block is a piece of code that is performing a task. Much like a function in JS.
 
-  Researched answer:
+  Researched answer: Blocks are like anonymous functions in JS. We create blocks by starting with 'do' and ending with 'end'. We can also use {} to create a block. Blocks are a set of instructions (code) that is executed by method. 
 
 
 
