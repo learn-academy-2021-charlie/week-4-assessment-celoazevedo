@@ -96,11 +96,14 @@ const minAndMax = (arr) => {
 
 // a) Create a test with an expect statement using the variables provided.
 // fdescribe() --> very cool so that we can just focused in the last test. Skiped the first two!
-describe("concatArraysNoDups", () => {
+fdescribe("concatArraysNoDups", () => {
     let testArray1 = [3, 7, 10, 5, 4, 3, 3]
     let testArray2 = [7, 8, 2, 3, 1, 5, 4]
+    let testArray3 = [7, 8, 2, 3, 19, 11, 4]
     test("takes in two arrays as arguments and returns one array with no duplicate values", () => {
-      expect(concatArraysNoDups(testArray1, testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
+      // expect(concatArraysNoDups(testArray1, testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
+      expect(concatArrUniqueVals(testArray1, testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
+      expect(concatArrUniqueVals(testArray1, testArray2, testArray3)).toEqual([3, 7, 10, 5, 4, 8, 2, 1, 19, 11])
     })
   })
 
@@ -113,7 +116,14 @@ describe("concatArraysNoDups", () => {
 // declare a variable to store the concatenation of the two arrays --> use .concat()
 // use new ES6 syntax to return an array from the (selection of only unique elements done by using the 'new Set()' es6 syntax) --- the test passed. Please let me know if there are any pitfalls by using this syntax.
 
-const concatArraysNoDups = (arr1, arr2) => {
-    let concArr = arr1.concat(arr2)
-    return Array.from(new Set(concArr))
+// const concatArraysNoDups = (arr1, arr2) => {
+//   let concArr = arr1.concat(arr2)
+//   return Array.from(new Set(concArr))
+// }
+
+// using the spread operator
+const concatArrUniqueVals = (...args) => {
+  let concArr = [].concat(...args)
+  console.log(concArr)
+  return Array.from(new Set(concArr))
 }
