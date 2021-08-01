@@ -55,12 +55,12 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 ## Looking Ahead: Terms for Next Week
 
-1. PostgreSQL: 
+1. PostgreSQL: it is an open source object-relational database. 
  
-2. Ruby on Rails:
+2. Ruby on Rails: it is a server-side web application framework. It gives ruby the power to build the default structures of a database, a web service and web pages. It makes the process easier becuase it gives Ruby all of these built in functionalities. 
 
-3. CRUD:
+3. CRUD: Create, Read, Update and Delete. This is where the fun begins! We will now be able to communicate with databases and to get info from the web and display it on our web apps! 🥳 
 
-4. ORM:
+4. ORM: Object Relational Mapper. -- I dont really understad this... 
 
-5. Active Record:
+5. Active Record: provide and interface and binding between that tables in a relational database and the Ruby program code that manipulates database records. Each Active Record Object has CRUD methods for database access.
