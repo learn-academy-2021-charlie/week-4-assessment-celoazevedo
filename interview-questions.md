@@ -23,39 +23,39 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. Ruby has an implicit return. What does that mean?
 
-  Your answer:
+  Your answer: that we do not need the keyword 'return' to return the result from a block or statement. it is implicit that the function or block will be returning something.
 
-  Researched answer:
+  Researched answer: it means that the last line inside of a method will always be returned (without the need of the return keyword)
 
 
 
 4. What is object-oriented programming? How is it different than functional programming?
 
-  Your answer:
+  Your answer: OOP is a programing paradigm. It is a set of rules that was agreed upon programers to structure the code. The four pillars that support the OOP paradigm are encapsulation, abstraction, inheritance and polymorphism. In functional programming we have the logic wrapped in functions that can be called as needed. That can become very complex / difficult to read / make changes. In oop we define the logic inside of classes and objects and this allows us to easily find the pieace of code that we would like to change, change that code without loosing sleep at night, or add a functionality without having to repeat your code. With functional programing we have our functions and variables 'floating around'. 
 
-  Researched answer:
+  Researched answer: in OOP we use objects to represent 'things' that we are programming. The objects holds data about them as attributes and the attributs can be manupulated by methods that are also part of the object. In functional programing, the function is the primary manipulation unit, it emphasizes in the evaluation of functions.
 
 
 
 5. What is the difference between a class and an object?
 
-  Your answer:
+  Your answer: A class is like a cookie cutter and the objects are like the cookies🍪. The class is the blueprint of an object. The object is an instance of the class. The class will have defined properties and methods and every object (instance of the class) will carry these properties and methods upon its instantiation.
 
-  Researched answer:
+  Researched answer: ... A class describes an objects behavior and defines the objects properties and default values. An object has state in which all properties have values.
 
 
 
 6. STRETCH: What is `attr_accessor`?
 
-  Your answer:
+  Your answer: the attr_accessor in Ruby is a lot like the constructor function in JS. When you call the attr_accessr inside of the class, you can access the attribute directly when you instantiate an object. You can call on the object and its property and access its (attribut value) value. But in order to have access to that property, we need to pass in the variable to our attr_accessor function inside of the class.
 
-  Researched answer:
+  Researched answer: In Ruby we can use the attr_accessor to automatically set up the getters and setters to access the instance variables. After passing in as an argument the instance variable that we want to access, we can access it directly from outside of the class. It also allow us to directly reassign a value to the instance variable by accessing it directly from outside of the class. With this method we do not need to set up our getters and setters inside of the class to access the values of the instance variables. We just initialize the instance variables inside the initialize method and pass in the variable to the attr_accessor.  
 
 
 
 ## Looking Ahead: Terms for Next Week
 
-1. PostgreSQL:
+1. PostgreSQL: 
  
 2. Ruby on Rails:
 
